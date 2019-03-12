@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="script.js">
+    </script>
+    <style>
+        canvas.ein {
+            border-style: solid;
+            border-width: 1px;
+        }
+    </style>
+    <title>Hangman</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Start nytt spel</legend>
+        <form>
+            <p>
+                <input id="ordInput" placeholder="Nytt ord" type="text"></input>
+                <input type="button" onclick="nyttSpel()" value="Start!"></input>
+            </p>
+        </form>
+    </fieldset>
+    <br/>
+    <fieldset>
+        <legend>Gjett bokstav</legend>
+        <form>
+            <p>
+                <input id="bokstavInput" placeholder="Bokstav (a, b, c, ...)" type="text"></input>
+                <input type="button" onclick="sjekkBokstav()" value="Sjekk!"></input>
+            </p>
+        </form>
+    </fieldset>
+    <br/>
+    <canvas class="ein" id="vindu" width="900" height="500">
+        Does not work.
+    </canvas>
+</body>
+
+</html>
